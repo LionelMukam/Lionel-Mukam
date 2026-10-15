@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090909">
+  <meta name="description" content="Simplo Store — boutique électronique au style luxe. Smartphones, informatique et accessoires.">
+  <title>Simplo Store | L'excellence technologique</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="announcement">SIMPlO STORE <span>—</span> L'ÉLÉGANCE DE LA TECHNOLOGIE</div>
+  <header class="site-header">
+    <a class="brand" href="#" aria-label="Simplo Store, accueil"><span class="brand-icon">S</span><span>SIMPLO <em>STORE</em></span></a>
+    <nav class="main-nav" aria-label="Navigation principale">
+      <a href="#boutique">Boutique</a><a href="#maison">Notre univers</a><a href="#contact">Contact</a>
+    </nav>
+    <button class="cart-button" id="cartButton" aria-label="Ouvrir le panier"><span>Panier</span><b id="cartCount">0</b></button>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="kicker"><span></span> TECHNOLOGIE • STYLE • EXIGENCE</p>
+        <h1>Le luxe se vit.<br><i>La technologie aussi.</i></h1>
+        <p class="hero-text">Découvrez notre sélection d’iPhone. Contactez-nous directement pour confirmer les prix en FCFA, les capacités de stockage et les modèles disponibles.</p>
+        <a class="gold-button" href="#boutique">Explorer la collection <span>↗</span></a>
+        <div class="hero-footnote"><span class="gold-line"></span> L'univers Simplo Store</div>
+      </div>
+      <div class="hero-art" aria-label="Composition stylisée de produits électroniques">
+        <div class="halo"></div><div class="gold-ring ring-a"></div><div class="gold-ring ring-b"></div>
+        <div class="hero-device"><div class="device-camera"></div><div class="device-screen"><span>S</span><small>SIMPlO STORE</small></div></div>
+        <div class="lux-card lux-card-top"><span class="mini-star">✦</span><div><small>SÉLECTION</small><strong>Premium</strong></div></div>
+        <div class="lux-card lux-card-bottom"><span class="mini-star">✧</span><div><small>DESIGN & PERFORMANCE</small><strong>Sans compromis</strong></div></div>
+        <div class="art-caption">01 — THE NEW STANDARD</div>
+      </div>
+    </section>
+
+    <section class="signature" id="maison">
+      <div class="signature-item"><span class="sig-number">01</span><div><h3>Une sélection soignée</h3><p>Des essentiels technologiques pour votre quotidien.</p></div></div>
+      <div class="signature-item"><span class="sig-number">02</span><div><h3>Le sens du détail</h3><p>Un univers sobre, élégant et fonctionnel.</p></div></div>
+      <div class="signature-item"><span class="sig-number">03</span><div><h3>Un contact direct</h3><p>Échangez avec nous avant de commander.</p></div></div>
+    </section>
+
+    <section class="collection" id="boutique">
+      <div class="section-title"><div><p class="kicker"><span></span> LA COLLECTION</p><h2>Les essentiels <i>du moment.</i></h2></div><p>Choisissez votre prochain compagnon technologique.</p></div>
+      <div class="catalog-tools">
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Rechercher dans la collection…" aria-label="Rechercher un produit"></label>
+        <div class="filters" id="filters">
+          <button class="filter active" data-category="Tous">Tout</button>
+          <button class="filter" data-category="iPhone">iPhone</button>
+        </div>
+      </div>
+      <div class="product-grid" id="productGrid" aria-live="polite"></div>
+      <p class="demo-note">Les prix ne sont pas affichés lorsqu’ils ne sont pas suffisamment lisibles sur les captures reçues. Écrivez-nous sur WhatsApp pour obtenir le tarif exact, selon le modèle et la capacité.</p>
+    </section>
+
+    <section class="contact-banner" id="contact">
+      <div><p class="kicker"><span></span> SIMPLO STORE</p><h2>Le prochain essentiel<br><i>est peut-être ici.</i></h2><p>Retrouvez-nous à l’Avenue Kennedy. Contactez-nous pour confirmer le prix exact, la capacité et la disponibilité avant votre achat.</p></div>
+      <a class="gold-button" id="contactLink" href="https://wa.me/237000000000" target="_blank" rel="noopener">Parler sur WhatsApp <span>↗</span></a>
+    </section>
+  </main>
+
+  <footer><a class="brand" href="#"><span class="brand-icon">S</span><span>SIMPLO <em>STORE</em></span></a><p>© <span id="year"></span> Simplo Store. Tous droits réservés.</p><a class="back-top" href="#">Retour en haut ↑</a></footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <dialog id="cartDialog" class="cart-dialog">
+    <div class="dialog-header"><div><p class="kicker"><span></span> VOTRE SÉLECTION</p><h2>Votre panier</h2></div><button id="closeCart" class="close-button" aria-label="Fermer le panier">×</button></div>
+    <div id="cartItems"></div>
+    <div class="total-row"><span>Total estimé</span><strong id="cartTotal">0 FCFA</strong></div>
+    <button class="gold-button checkout-button" id="checkoutButton">Continuer sur WhatsApp <span>↗</span></button>
+    <p class="cart-disclaimer">Les prix et disponibilités sont à confirmer par Simplo Store avant validation de la commande.</p>
+  </dialog>
+  <script src="script.js"></script>
+</body>
+</html>
